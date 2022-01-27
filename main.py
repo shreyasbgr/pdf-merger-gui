@@ -1,4 +1,5 @@
 import os
+import logger_util
 from PyPDF2 import PdfFileReader, PdfFileWriter
 
 def get_files_directories(path):
@@ -20,6 +21,9 @@ def pdf_merger(paths,output):
         pdf_writer.write(out)
 
 def final_fn():
+    logger_utility = logger_util.custom_logger()
+    logger_utility.logger.info("Hi there!")
+
     path=input("Enter the path where at which all the pdf's need to be merged: ")
     paths = get_files_directories(path)
     pdf_paths = [p for p in paths if p.endswith('.pdf')]
