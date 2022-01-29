@@ -10,13 +10,10 @@ def get_files_path(path):
     return files_full_path
 
 def get_pdf_files_path(path):
-    try:
-        files=os.listdir(path)
-        pdf_files_path=[os.path.join(path,f) for f in files if f.endswith('.pdf')]
-        return pdf_files_path
+    files=os.listdir(path)
+    pdf_files_path=[os.path.join(path,f) for f in files if f.endswith('.pdf')]
+    return pdf_files_path
     
-    except Exception as e:
-        logger.exception("Error occured while getting pdf file paths.")
 
 def get_files(path):
     files=os.listdir(path)
@@ -28,7 +25,7 @@ def get_pdf_files(path):
     return pdf_files
 
 def pdf_merger(paths,output):
-    if len(paths)==0:
+    if paths is None or len(paths)==0:
         logger.info("No pdf files are present.")
         return
 

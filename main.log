@@ -33,3 +33,20 @@
 2022-01-29 18:05:56,553 - 	INFO - main.py - <module> - 62 - Starting the app!
 2022-01-29 18:05:56,553 - 	INFO - main.py - <module> - 62 - Starting the app!
 2022-01-29 18:08:03,784 - 	INFO - main.py - <module> - 62 - Starting the app!
+2022-01-29 18:10:46,128 - 	INFO - main.py - <module> - 62 - Starting the app!
+2022-01-29 18:11:19,617 - 	INFO - file_listing.py - pdf_merger - 32 - No pdf files are present.
+2022-01-29 18:11:37,147 - 	INFO - file_listing.py - pdf_merger - 47 - pdf files merged successfully at D:\Game Installation Files\It Takes Two [FitGirl Repack]\merged.pdf
+2022-01-29 18:13:13,607 - 	INFO - main.py - <module> - 62 - Starting the app!
+2022-01-29 18:13:34,950 - 	ERROR - file_listing.py - get_pdf_files_path - 19 - Error occured while getting pdf file paths.
+Traceback (most recent call last):
+  File "D:\Projects\pdf-merger-gui\file_listing.py", line 14, in get_pdf_files_path
+    files=os.listdir(path)
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'D:\\Game Installation Files\\It Takes Two [FitGirl Repack]\\hello'
+2022-01-29 18:15:51,703 - 	INFO - main.py - <module> - 62 - Starting the app!
+2022-01-29 18:15:58,781 - 	ERROR - file_listing.py - get_pdf_files_path - 19 - Error occured while getting pdf file paths.
+Traceback (most recent call last):
+  File "D:\Projects\pdf-merger-gui\file_listing.py", line 14, in get_pdf_files_path
+    files=os.listdir(path)
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'D:\\Game Installation Files\\It Takes Two [FitGirl Repack]\\hello'
+2022-01-29 19:31:17,010 - 	INFO - main.py - <module> - 62 - Starting the app!
+2022-01-29 19:31:32,297 - 	INFO - file_listing.py - pdf_merger - 29 - No pdf files are present.
