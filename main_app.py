@@ -1,6 +1,8 @@
 import os
 import tkinter as tk
 import file_listing
+from logger_util import custom_logger
+
 class MainApplication(tk.Frame):
     def __init__(self, master, *args, **kwargs):
         tk.Frame.__init__(self, *args, **kwargs)
@@ -56,6 +58,8 @@ class MainApplication(tk.Frame):
         file_listing.pdf_merger(pdf_paths, output=os.path.join(path,"merged.pdf"))
 
 if __name__ == "__main__":
+    logger = custom_logger().get_logger()
+    logger.info("Starting the app!")
     window = tk.Tk()
     MainApplication(window)
     window.mainloop()

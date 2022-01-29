@@ -22,3 +22,6 @@ class custom_logger:
 
         # Add handlers to the logger
         self.logger.addHandler(self.fhandler)
+
+    def get_logger(self):
+        return self.logger
