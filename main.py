@@ -1,6 +1,10 @@
 import os
+import tkinter as tk
 import logger_util
 from PyPDF2 import PdfFileReader, PdfFileWriter
+master = tk.Tk()
+directory_var = tk.StringVar()
+directory_input = tk.Entry(master,textvariable = directory_var).grid(row=0,column=1)
 
 def get_files_directories(path):
     files=os.listdir(path)
@@ -24,23 +28,33 @@ def final_fn():
     logger_utility = logger_util.custom_logger()
     logger_utility.logger.info("Hi there!")
 
-    path=input("Enter the path where at which all the pdf's need to be merged: ")
+    path=directory_var.get()
     paths = get_files_directories(path)
     pdf_paths = [p for p in paths if p.endswith('.pdf')]
     files = [os.path.basename(p) for p in paths]
     pdf_files = [os.path.basename(p) for p in pdf_paths]
 
-    print("All the files and folders in the current directory are: \n")
+    # print("All the files and folders in the current directory are: \n")
+    Lb1=tk.Listbox(master)
+    i=0
     for f in files:
-        print(f)
-    print()
+        Lb1.insert(i,f)
+        i+=1
+    Lb1.grid(row=1,column=0)
 
-    print("All the pdf files in the current directory are: \n")
+    #print("All the pdf files in the current directory are: \n")
+    Lb2=tk.Listbox(master)
     for f in pdf_files:
-        print(f)
-    print()
+        Lb2.insert(i,f)
+        i+=1
+    Lb2.grid(row=1,column=1)
 
     pdf_merger(pdf_paths, output=os.path.join(path,"merged.pdf"))
 
-final_fn()
+def final_fn_gui():
+    master.title("PDF Merger App")
+    tk.Label(master, text='Enter the path of the directory:').grid(row=0)
+    button = tk.Button(master,text='Merge PDFs',width=25,command=final_fn).grid(row=0,column=2)
+    master.mainloop()
+final_fn_gui()
 
