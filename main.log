@@ -18,3 +18,18 @@
 2022-01-29 15:33:24,106 - 	INFO - main.py - final_fn - 29 - Hi there!
 2022-01-29 17:29:06,040 - 	INFO - main_app.py - <module> - 62 - Starting the app!
 2022-01-29 17:33:30,962 - 	INFO - main.py - <module> - 62 - Starting the app!
+2022-01-29 17:54:19,516 - 	INFO - main.py - <module> - 62 - Starting the app!
+2022-01-29 17:54:19,516 - 	INFO - main.py - <module> - 62 - Starting the app!
+2022-01-29 18:00:53,284 - 	INFO - main.py - <module> - 62 - Starting the app!
+2022-01-29 18:00:53,284 - 	INFO - main.py - <module> - 62 - Starting the app!
+2022-01-29 18:01:01,660 - 	INFO - file_listing.py - pdf_merger - 32 - No pdf files are present.
+2022-01-29 18:01:01,660 - 	INFO - file_listing.py - pdf_merger - 32 - No pdf files are present.
+2022-01-29 18:02:45,715 - 	INFO - main.py - <module> - 62 - Starting the app!
+2022-01-29 18:02:45,715 - 	INFO - main.py - <module> - 62 - Starting the app!
+2022-01-29 18:03:29,419 - 	INFO - main.py - <module> - 62 - Starting the app!
+2022-01-29 18:03:29,419 - 	INFO - main.py - <module> - 62 - Starting the app!
+2022-01-29 18:03:47,435 - 	INFO - file_listing.py - pdf_merger - 47 - pdf files merged successfully at D:\Game Installation Files\It Takes Two [FitGirl Repack]\merged.pdf
+2022-01-29 18:03:47,435 - 	INFO - file_listing.py - pdf_merger - 47 - pdf files merged successfully at D:\Game Installation Files\It Takes Two [FitGirl Repack]\merged.pdf
+2022-01-29 18:05:56,553 - 	INFO - main.py - <module> - 62 - Starting the app!
+2022-01-29 18:05:56,553 - 	INFO - main.py - <module> - 62 - Starting the app!
+2022-01-29 18:08:03,784 - 	INFO - main.py - <module> - 62 - Starting the app!

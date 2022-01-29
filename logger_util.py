@@ -21,7 +21,8 @@ class custom_logger:
         self.fhandler.setFormatter(fformat)
 
         # Add handlers to the logger
-        self.logger.addHandler(self.fhandler)
+        if not self.logger.handlers:
+            self.logger.addHandler(self.fhandler)
 
     def get_logger(self):
         return self.logger
